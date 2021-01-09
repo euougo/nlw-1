@@ -14,15 +14,15 @@ Serve como uma conexão entre empresas coletoras de resíduos a pessoas que prec
 - [x] Por que criaremos uma API?
 - [x] Conceitos do TypeScript
 - [x] Criar base do projeto com Node.js
-- [ ] React & SPA
-- [ ] Criando projeto ReactJS
-- [ ] React Native & Expo
+- [x] React & SPA (Single Page Applications)
+- [x] Criando projeto ReactJS
+- [x] React Native & Expo
 
 ### Glossário
 * MVC (Model/View/Controller):
-    - Template Engine (Nunjucs).
-    - /users
-    - HTML da página de listagem de usuários.
+    - Template Engine (Nunjucs) => VIEW (Retornar HTML do Back-end).
+      - /users (Rota)
+      - HTML da página de listagem de usuários.
 * Back-end (Node.js):
     - Regras de negócio.
     - Conexão com banco de dados.
@@ -31,11 +31,24 @@ Serve como uma conexão entre empresas coletoras de resíduos a pessoas que prec
     - Criptografia e segurança;
 * REST:
     - /users
-    - Dados dos usuários (JSON).
-* Front-end (ReactJS):
-    - Listagem de usuários (HTML & CSS).
-* Mobile (React Native):
-    - Android/iOS.
+
+    - Dados dos usuários (JSON), e não a página em HTML.
+
+      ```json
+      {
+          {
+          	"name": "Hugo",
+              "age": 32
+          }
+      }
+      ```
+
+* Consomem o Back-end:
+
+    * Front-end (ReactJS):
+        - Listagem de usuários (HTML & CSS).
+    * Mobile (React Native):
+        - Android/iOS.
 
 #### Ferramentas
 * Notion - Notas/Checklists/Cadernos: https://www.notion.so/
@@ -44,21 +57,46 @@ Serve como uma conexão entre empresas coletoras de resíduos a pessoas que prec
 
 #### TypeScript
 * Porque?
-    - Superset de JavaScript.
+    - Superset de JavaScript - JavaScript com super poderes.
+    - Tipagens.
 * Mitos e verdades
-    - TS diminui a produtividade. (Mito)
+    - TS diminui a produtividade. (Mito - No inicio sim)
     - TS é transformar JS em Java ou C#. (Mito)
     - O mercado não usa TS. (Mito)
     - TS substitui o JS por completo. (Mito)
     - TS atrapalha quem é iniciante. (Mito)
 
-#### Passo a passo
-* Criar a base do projeto em Node.js
-* Abrir a pasta do projeto no Terminal
-* Criar uma pasta para a base:
-    - mkdir server
-    - cd server
-* npm init -y
-    - A flag "-y" serve para o NPM não fazer as questões.
+### React
 
-*** 38 min.
+* O que é React?
+  *  Biblioteca para construção de interfaces.
+  * Utilizado para construção de Single Page Applications.
+  * O "ecossistema" React, leva de biblioteca a Framework.
+  * Tudo fica dentro do JavaScript.
+  * React/ ReactJS/ React Native.
+* Vantagens
+  * Organização do código.
+    * Componentização.
+  * Divisao de responsabilidades.
+    * Back-end: Regra de negócio.
+    * Front-end: Interface.
+  * Uma API, múltiplos clientes.
+
+### React Native & Expo
+
+* Abordagem tradicional x Abordagem do React Native.
+  * Tradicional: iOS = Swift, Android = Java/Kotlin
+  * React Native: Mesmo código, o dispositivo entende JS através do JSCore.
+* Expo permite testar sem ter que instalar as SDK's do iOS e Android.
+  * É um aplicativo para celular que encapsula o nosso aplicativo.
+
+
+
+## 2° Dia: Back-end da Aplicação
+
+## 3° Dia: Front-end web da Aplicação
+
+## 4° Dia: Front-end Mobile da Aplicação
+
+## 5° Dia: Recursos Avançados
+
