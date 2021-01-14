@@ -50,6 +50,10 @@
         * Dois devs no mesmo projeto, mas cada um cria uma tabela para mesma coisa com nomes diferentes.
         * create table points
         * create table users
-- [ ] Funcionalidades da aplicação
-- [ ] Construção do app
-- [ ] Adicionando CORS
+- [*] Funcionalidades da aplicação
+    * Cadastro de ponto de coleta
+    * Lista os itens de coleta
+    * Listar pontos (filtro por estado/cidade/items)
+    * Listar um ponto de coleta específico
+- [*] Construção do app
+- [*] Adicionando CORS
